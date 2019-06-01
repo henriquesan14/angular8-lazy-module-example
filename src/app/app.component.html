@@ -1,6 +1,22 @@
-<div>
-  <a routerLink="mesas" >Mesas</a>
-  <a routerLink="produtos" >Produtos</a>
-  <a routerLink="pedidos" >Pedidos</a>
+<div class="grid-template">
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a routerLink="mesas">Mesas</a>
+      </li>
+      <li>
+          <a routerLink="produtos">Produtos</a>
+        </li>
+        <li>
+            <a routerLink="pedidos">Pedidos</a>
+          </li>
+    </ul>
+  </nav>
+  <content class="content">
+      <router-outlet></router-outlet>
+  </content>
+  <footer class="footer">
+      <span>© 2019 Copyright: Henrique Santos</span>
+  </footer>
+ 
 </div>
-<router-outlet></router-outlet>
