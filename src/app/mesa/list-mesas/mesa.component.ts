@@ -12,4 +12,8 @@ export class MesaComponent implements OnInit {
   ngOnInit() {
   }
 
+  teste(e){
+    console.log(e)
+  }
+
 }
