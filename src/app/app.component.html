@@ -1,17 +1,23 @@
 <div class="grid-template">
-  <nav class="navbar">
-    <ul>
-      <li>
-        <a routerLink="mesas">Mesas</a>
-      </li>
-      <li>
-          <a routerLink="produtos">Produtos</a>
-        </li>
-        <li>
-            <a routerLink="pedidos">Pedidos</a>
-          </li>
-    </ul>
-  </nav>
+  <header class="header">
+    <a routerLink="/">crud</a>
+    
+  </header>
+  <aside class="aside">
+      <nav>
+          <ul>
+            <li routerLink="mesas" routerLinkActive="active">
+              <span>Mesas</span>
+            </li>
+            <li routerLink="produtos"  routerLinkActive="active">
+                <span>Produtos</span>
+              </li>
+              <li routerLink="pedidos"  routerLinkActive="active">
+                  <span>Pedidos</span>
+                </li>
+          </ul>
+        </nav>
+  </aside>
   <content class="content">
       <router-outlet></router-outlet>
   </content>
